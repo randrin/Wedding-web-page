@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vanessa & Randrin | Wedding</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="icon" type="image/gif/png" href="assets/logo_url/Logo_url.png">
+        <link rel="stylesheet" href="assets/css/Randrin&Vanessa.css">
+        <link rel="stylesheet" href="assets/css/Timeline.css">
+        <link rel="stylesheet" href="assets/css/material-kit.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+        <style>
+            body,h1,h2,h3,h4,h5, p {
+                font-family: 'Titillium Web', cursive;
+                margin: 0;
+                padding: 0;
+                background: url(img/Parallax/login-fond.jpg) center center fixed no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            body, html {height: 100%}
+            p {line-height: 2}
+            .bgimg, .bgimg2, .bgimg3, .bgimg4, .bgimg5 {
+                min-height: 130%;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .bgimg2 {background-image: url("/w3images/flowers.jpg")}
+            .bgimg3 {background-image: url("assets/img/wedding_background.jpg")}
+            .bgimg4 {background-image: url("assets/img/ceremonie_background.jpg")}
+            .bgimg5 {background-image: url("assets/img/store_love.png")}
+        </style>
+    </head>
+    <body class="randrin-light-grey" onload="window.history.forward(1);">
+        <div class="row">
+            <div class="loginProgres">
+                <form action="Vanessa&Randrin.html" method="get">
+                    <img src="img/Logos/Logo_blanc.png" width="200" height="75"/>
+                    <br>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="input-group inputForm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i style="color: #ff00e7" class="material-icons">how_to_reg</i>
+                                    </span>
+                                </div>
+                                <input type="text" id="identifiant" class="form-control" placeholder="Identifiant">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="input-group inputForm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i style="color: #ff00e7" class="material-icons">lock</i>
+                                    </span>
+                                </div>
+                                <input type="password" id="motDePasse" class="form-control" placeholder="Mot De Passe">
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="input-group inputForm">
+                                <button id="submit" type="submit" class="btn btn-social btn-fill btn-dribbble">
+                                    <i class="material-icons">favorite</i> <b>Entrez ...</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="incorrectAccess" style="text-align: center;"></p>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Start Javascript Function -->
+        <script>
+            <!-- START: Pour éviter les vas et viens sans avoir à se connecter correctement -->
+            function DisableBackButton() {
+                window.history.forward()
+            }
+
+            DisableBackButton();
+            window.onload = DisableBackButton;
+            window.onpageshow = function(evt) {
+                if (evt.persisted)
+                    DisableBackButton()
+            }
+
+            window.onunload = function() {
+                void (0)
+            }
+                <!-- END: Pour éviter les vas et viens sans avoir à se connecter correctement -->
+        </script>
+        <!-- End Javascript Function -->
+
+        <script src="assets/js/plugins/Randrin&Vanessa.js"></script>
+
+        <!--   Core JS Files   -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/popper.min.js"></script>
+        <script src="assets/js/bootstrap-material-design.js"></script>
+
+        <!-- Plugin for Date Time Picker and Full Calendar Plugin-->
+        <script src="assets/js/plugins/moment.min.js"></script>
+
+        <!-- Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+        <script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
+
+        <!-- Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+        <script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
+
+        <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+        <script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
+
+        <!-- Plugin for Small Gallery in Product Page -->
+        <script src="assets/js/plugins/jquery.flexisel.js"></script>
+
+        <!-- Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+        <script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+
+        <!-- Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="assets/js/plugins/nouislider.min.js"></script>
+
+        <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+        <script src="assets/js/material-kit.js?v=2.0.3"></script>
+
+        <!-- Fancybox Plugin for maximize open picture clicking -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    </body>
+</html>
